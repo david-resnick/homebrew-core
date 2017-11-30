@@ -84,7 +84,7 @@ class Zsh < Formula
       /usr/local/bin/zsh -c 'source /usr/local/share/zsh/functions/compaudit'
     EOS
   end
-  
+
   test do
     assert_equal "homebrew", shell_output("#{bin}/zsh -c 'echo homebrew'").chomp
     system bin/"zsh", "-c", "printf -v hello -- '%s'"
